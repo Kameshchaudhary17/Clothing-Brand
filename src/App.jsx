@@ -2,7 +2,8 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
-import Home from './components/Home'
+import Product from './components/Product'
+import Dashboard from './pages/Dashboard'
 function App() {
 
   return (
@@ -10,9 +11,11 @@ function App() {
       <BrowserRouter>
       <Routes>
 
-      <Route path = '/' element={<Home/>}/>
+      <Route path = '/' element={<Product/>}/>
       <Route path = '/sidebar' element={<Sidebar/>}/>
-      <Route path = '/sidebar' element={<Navbar/>}/>
+      <Route path = '/navbar' element={<Navbar/>}/>
+      <Route path = '/dashboard' element={<Dashboard/>}/>
+
 
       </Routes>
       </BrowserRouter>
